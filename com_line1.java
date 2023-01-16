@@ -1,0 +1,20 @@
+//commandline argument...[4 program]
+
+class com_line1
+{
+	public static void main(String args[])
+	{
+		for(int i=0; i<args.length; i++)
+		System.out.println(args[i]);
+	}
+}
+
+
+o/p:-
+java com_line1 one two three four five
+
+one 
+two
+three
+four
+five
