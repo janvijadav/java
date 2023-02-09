@@ -3,19 +3,19 @@
 		{  
 		static boolean isarmstrong(int n)   
 		{   
-		int temp, j=0, k=0, sum=0;   
-		temp=n;   
-		while(temp>0)    
+		int a, j=0, k=0, sum=0;   
+		a=n;   
+		while(a>0)    
 		{   
-		temp = temp/10;   
+		a = a/10;   
 		j++;   
 		}   
-		temp = n;   
-		while(temp>0)   
+		a = n;   
+		while(a>0)   
 		{   
-		k = temp % 10;   
+		k = a % 10;   
 		sum +=  (Math.pow(k, j));   
-		temp = temp/10;   
+		a = a/10;   
 		}  
 		if(n==sum)   
 		return true;      
