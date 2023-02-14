@@ -52,6 +52,42 @@ class string1
     System.out.print("Output:- " );
     System.out.println(Str1.intern());
 
+        
+     String str2 = "This is java program.";
+    System.out.println("index of letter 's' = " 
+       + str.indexOf('s')); 
+
+
+    String Str3 = new String("Welcome to java ");
+    System.out.print("Found Index :" );
+    System.out.println(Str.indexOf( 'o', 5 ));
+    
+   
+    String str4 = new String("Welcome to geeksforgeeks");
+    System.out.print("Found g first at position : ");
+    System.out.println(str4.indexOf('g'));
+    
+
+    String strInput = new String("hello world");
+    String strSub = new String("world");
+    System.out.print("Index found: " );
+    System.out.println(strInput.indexOf(strSub, 3));
+
+
+    String txt = "Hello World";
+    System.out.println(txt.toLowerCase());
+
+
+    String str6 = "Hello World";
+    System.out.println(str6.toUpperCase());
+
+    String myStr = "       Hello World!       ";
+    System.out.println(myStr);
+    System.out.println(myStr.trim());
+
+    int value=30;  
+    String str7=String.valueOf(value);  
+    System.out.println(str7+10);//concatenating string with 10  
     }
 }    
 
