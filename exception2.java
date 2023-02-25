@@ -5,9 +5,11 @@ class exception2
     {
         int a,b,c;
         Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a no:- ");
         try
         {
             a=sc.nextInt();
+            System.out.println("/");
             b=sc.nextInt();
             c=a/b;
             System.out.println("c="+c);
@@ -20,3 +22,12 @@ class exception2
         System.out.println("end");
     }
 }
+
+/*
+Enter a no:-
+12
+/
+2
+c=6
+end
+ */

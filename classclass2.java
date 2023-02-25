@@ -17,3 +17,12 @@ public class classclass2
         System.out.println("is j instance of String : " + b2);
     }
 }
+
+/*
+ Class represented by class1:
+class java.lang.String
+Class represented by class2:
+int
+is p instance of String : true
+is j instance of String : false
+ */
