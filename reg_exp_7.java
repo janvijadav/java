@@ -1,29 +1,31 @@
+
 //Create a regex that accepts 10 digits...
 import java.util.regex.*;
-public class reg_exp_7 
-{
-    public static void main(String[] args) 
-    {
-        System.out.println("By Character classes and quantifiers...");
-        System.out.println(Pattern.matches("[789[1][0-9][9]]","9953038945"));
-        System.out.println(Pattern.matches("[789[0-9][9]]","9953038945"));
-        System.out.println(Pattern.matches("[789[0-9][9]]","99530389450"));
-        System.out.println(Pattern.matches("[789[0-9][9]]","6953038945"));
-        System.out.println(Pattern.matches("[789[0-9][9]]","8853038945"));
-        System.out.println("By Metacharacter...");
-        System.out.println(Pattern.matches("[789[0-9][9]]","8853038949"));
-        System.out.println(Pattern.matches("[789[0-9][9]]","3853038949"));
-    }
-}
 
+public class reg_exp_7
+{
+	public static void main(String args[])
+	{
+		System.out.println("by character class and quantifier");
+		System.out.println(Pattern.matches("[789]{1}[0-9]{9}","9898989898"));
+		System.out.println(Pattern.matches("[789][0-9]{9}","9953099530"));
+		System.out.println(Pattern.matches("[789][0-9]{9}","99530995309"));
+		System.out.println(Pattern.matches("[789][0-9]{9}","6953099530"));
+		System.out.println(Pattern.matches("[789][0-9]{9}","8953089530"));
+		
+		System.out.println("by character class and quantifier");
+		System.out.println(Pattern.matches("[789]{1}\\d{9}","8953089530"));
+		System.out.println(Pattern.matches("[789]{1}\\d{9}","3953039530"));
+	}
+}
 /*
-By Character classes and quantifiers...
+by character class and quantifier
+true
+true
 false
 false
+true
+by character class and quantifier
+true
 false
-false
-false
-By Metacharacter...
-false
-false
- */
+*/
